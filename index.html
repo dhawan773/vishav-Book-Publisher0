@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vishv Book Publication - Applicant Details</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f3f6fb;
+    color:#172033;
+}
+
+.header{
+    background:#173b7a;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+.header h1{
+    font-size:25px;
+}
+
+.header p{
+    margin-top:7px;
+    opacity:.9;
+}
+
+.demo{
+    text-align:center;
+    background:#fff3cd;
+    color:#765800;
+    padding:11px;
+    font-weight:bold;
+}
+
+.container{
+    max-width:850px;
+    margin:25px auto;
+    padding:0 15px;
+}
+
+.card{
+    background:#fff;
+    padding:22px;
+    margin-bottom:18px;
+    border-radius:14px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#173b7a;
+    margin-bottom:17px;
+    font-size:20px;
+}
+
+.detail{
+    display:flex;
+    justify-content:space-between;
+    padding:13px 0;
+    border-bottom:1px solid #eee;
+}
+
+.detail:last-child{
+    border-bottom:0;
+}
+
+.label{
+    color:#667085;
+}
+
+.value{
+    font-weight:bold;
+    text-align:right;
+}
+
+.amounts{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.amount{
+    border:1px solid #e2e7ef;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+}
+
+.amount h3{
+    color:#667085;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.amount strong{
+    display:block;
+    font-size:28px;
+    color:#173b7a;
+}
+
+.badge{
+    display:inline-block;
+    margin-top:10px;
+    padding:5px 10px;
+    background:#eef2f7;
+    color:#475467;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.admin{
+    border-left:5px solid #173b7a;
+    background:#eef5ff;
+}
+
+.notice{
+    color:#475467;
+    line-height:1.7;
+}
+
+.footer{
+    text-align:center;
+    padding:20px;
+    font-size:13px;
+    color:#667085;
+}
+
+@media(max-width:600px){
+    .amounts{
+        grid-template-columns:1fr;
+    }
+
+    .detail{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    .value{
+        text-align:left;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Vishv Book Publication</h1>
+    <p>Applicant Information Portal</p>
+</header>
+
+<div class="demo">
+    DEMO / SAMPLE — यह वास्तविक Payment Confirmation नहीं है
+</div>
+
+<div class="container">
+
+    <!-- Applicant Details -->
+    <div class="card">
+        <h2>Applicant Details</h2>
+
+        <div class="detail">
+            <span class="label">Full Name</span>
+            <span class="value">Shreya Pandey</span>
+        </div>
+
+        <div class="detail">
+            <span class="label">Mobile No.</span>
+            <span class="value">9329492529</span>
+        </div>
+
+        <div class="detail">
+            <span class="label">House No.</span>
+            <span class="value">D54</span>
+        </div>
+
+        <div class="detail">
+            <span class="label">Area Name</span>
+            <span class="value">Patel Nagar</span>
+        </div>
+
+        <div class="detail">
+            <span class="label">City</span>
+            <span class="value">Bhopal</span>
+        </div>
+
+        <div class="detail">
+            <span class="label">PIN Code</span>
+            <span class="value">462001</span>
+        </div>
+
+        <div class="detail">
+            <span class="label">State</span>
+            <span class="value">Madhya Pradesh</span>
+        </div>
+    </div>
+
+    <!-- Amount Details -->
+    <div class="card">
+        <h2>Amount Details</h2>
+
+        <div class="amounts">
+
+            <div class="amount">
+                <h3>Refundable Amount</h3>
+                <strong>₹2,000</strong>
+                <span class="badge">PROPOSED / DEMO</span>
+            </div>
+
+            <div class="amount">
+                <h3>Salary Advance</h3>
+                <strong>₹10,000</strong>
+                <span class="badge">PROPOSED / DEMO</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div class="card admin">
+        <h2>Admin Panel</h2>
+
+        <div class="detail">
+            <span class="label">Admin / Reference Number</span>
+            <span class="value">9329492529</span>
+        </div>
+
+        <div class="detail">
+            <span class="label">Company</span>
+            <span class="value">Vishv Book Publication</span>
+        </div>
+
+        <div class="detail">
+            <span class="label">Panel Status</span>
+            <span class="value">Demo Admin</span>
+        </div>
+    </div>
+
+    <!-- Notice -->
+    <div class="card">
+        <h2>Important Notice</h2>
+
+        <p class="notice">
+            यह पेज केवल demonstration और internal testing के लिए है।
+            यहां दिखाई गई ₹2,000 refundable amount तथा ₹10,000 salary
+            advance किसी वास्तविक payment, refund या salary transaction
+            की पुष्टि नहीं करते।
+        </p>
+    </div>
+
+</div>
+
+<footer class="footer">
+    © 2026 Vishv Book Publication — Demo Portal
+</footer>
+
+</body>
+</html>
